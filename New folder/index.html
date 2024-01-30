@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Effect</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.site-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s ease;
+}
+
+body.scrolling .site-header {
+  top: -100px;
+}
+.box{
+  width: 500px;
+  height: 500px;
+  background-color: #333;
+}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Scroll Effect</h1>
+  </header>
+  <div class="content">
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+  </div>
+</body>
+</html>
