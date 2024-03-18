@@ -2,11 +2,14 @@ const signIn = () => {
   if (checkEmailTT() == 1 && checkSyntax()==1) {
     getInfo();
     window.location.href =
-    "http://127.0.0.1:5500/daotao/endOfIntern/login.html";
+    "http://127.0.0.1:5500/login.html";
   }
 
 };
-
+const Log = ()=> {
+  window.location.href =
+    "http://127.0.0.1:5500/login.html";
+}
 // check cu phap cua email, pass va confirmpass;
 const checkSyntax = () => {
   const email = document.getElementById("mail").value;
@@ -48,6 +51,8 @@ const checkSyntax = () => {
   //     "http://127.0.0.1:5500/daotao/endOfIntern/login.html";
   // }
 };
+
+
 
 const checkEmailTT = () => {
   const email = document.getElementById("mail").value;
@@ -94,3 +99,66 @@ const getInfo = () => {
  
 };
 // getInfo();
+
+
+const Login = () =>{
+  if(checkmail()== 1){
+    window.location.href =
+       "http://127.0.0.1:5500/login-sucess.html";
+  }
+}
+
+const checkmail = () =>{
+  const email = document.getElementById("log-email").value;
+  const pass = document.getElementById("log-pass").value;
+  const passwordID = document.getElementById("err-log-pass");
+  const mailID = document.getElementById("err-log-email");
+
+  // Lấy danh sách các tài khoản từ LocalStorage
+var storedAccounts = localStorage.getItem("accounts");
+var accounts = storedAccounts ? JSON.parse(storedAccounts) : {};
+
+// Email và mật khẩu cần kiểm tra
+var inputEmail =  email;
+var inputPassword = pass;
+console.log(accounts.hasOwnProperty(inputEmail))
+// Kiểm tra xem email đã tồn tại trong danh sách tài khoản hay không
+if (accounts.hasOwnProperty(inputEmail)) {
+    mailID.style.display= "none";
+    // Kiểm tra xem mật khẩu nhập vào có khớp với mật khẩu của email đó hay không
+    if (accounts[inputEmail] === inputPassword) {
+      passwordID.style.display= "none";
+      mailID.style.display= "none";
+      return 1;
+    } else {
+      passwordID.style.display= "block";
+      return 0;
+    }
+} else {
+  mailID.style.display= "block";
+  passwordID.style.display= "none";
+  return 0;
+}
+
+
+
+
+//   // Lấy danh sách các email từ LocalStorage
+// var storedEmails = localStorage.getItem("emails");
+// var emails = storedEmails ? JSON.parse(storedEmails) : [];
+
+// // Email mới cần kiểm tra
+// var newEmail = email;
+
+// // Kiểm tra xem email mới đã tồn tại trong danh sách hay không
+// var emailExists = emails.includes(newEmail);
+
+// if (emailExists) {
+//     passwordID.style.display= "none";
+//     return 1;
+// } else {
+//    passwordID.style.display= "block";
+//    return 0;
+// }
+
+}

@@ -9,7 +9,7 @@ const getAllUsers = async () => {
     console.error(err);
   }
 };
-
+window.addEventListener
 const getIDuser = async () => {
   const id = document.getElementById("ID").value;
   try {

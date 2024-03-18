@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            width: 100%;
+            max-height: 80px;
+            top:0;
+            height: auto;
+            padding: 0px;
+            background-color:whitesmoke;
+            position: fixed;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            max-height: fit-content;
+        }
+        .blackbox {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      margin-right: 0px; 
+      border-radius: 9px;
+      font-size: 30px;
+     
+      
+    }
+    .text {
+      display: inline-block;
+      vertical-align: top; 
+      font-size: 20px;
+     margin-left:20px ;
+    }
+    .icon{
+        color: red;
+        justify-content:flex-end;
+        vertical-align: top;
+        width:20px;
+        height:20px;
+        margin-right: 1%;
+        display: flex;
+        align-items: center;
+      ;
+}
+.banner{
+    display: flex;
+  margin-top: 100px;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  
+}
+img {
+  width: auto;
+  height: auto;
+  margin-right: 50px;
+}
+.text{
+  width: 70%;
+  height: auto;
+}
+.text1{
+  width: 40%;
+  height: auto;
+}
+.ex{
+  width: auto;
+  height: 30px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+
+}
+.ex li{
+  margin-right: 40px;
+}
+.ex strong{
+  display: block;
+  color: #ff4a4a;
+  font-size: 40px;
+  font-weight: 30px;
+}
+.content{
+  width: 80%;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 60px;
+  background-color: #fcfcfc;
+  flex-direction: column;
+  margin-left: 18%;
+
+}
+.heading{
+  padding-bottom: 10px;
+  border-bottom: #ff4a4a 3px solid;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-right: 50%;
+ 
+  /* height: 20px; */
+}
+.lorem{
+  width: 80%;
+  height: auto;
+  font-size: 30px;
+  font-weight: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.buton{
+  display: inline-block;
+      padding: 10px 20px; 
+      text-align: center;
+      font-size: 16px;
+      border: 2px solid #ff4a4a;
+      color:#ff4a4a; 
+      border-radius: 15px;
+      margin-left: 30%;
+      margin-top: 2%;
+      margin-bottom: 10%;
+      transition: background-color 0.4s ease;
+}
+.buton:hover{
+  background-color: #ff4a4a;
+  color:#fcfcfc;
+}
+.skill{
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.row{
+  width: 30%;
+  height: 300px;
+  flex:1.5;
+ 
+}
+.buton1{
+  display: inline-block;
+      padding: 10px 20px; 
+      text-align: center;
+      font-size: 16px;
+      border: 2px solid #000000;
+      color:#000000; 
+      border-radius: 15px;
+      margin-top: 2%;
+      margin-bottom: 2%;
+}
+.exprience{
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.container2{
+  width: 70%;
+  height: 220px;
+  background-color: rgb(207, 207, 207);
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+
+}
+    </style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+<div>
+    <div class="header">
+        <div class="container">
+            <div class="blackbox">
+                <span>J</span>
+              
+            </div>
+            <h5 class="text">JASON STROFF</h5>
+            <pre class="icon">
+                <i class="fa-brands fa-github"></i>
+              </pre>
+              <pre class="icon">
+                <i class="fa-brands fa-facebook"></i>
+              </pre>
+              <pre class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </pre>
+        </div>
+    </div>
+
+  
+    <div class="banner">
+      <img src="./profile-image.jpg" height="200px" alt="anh the">
+      <div class="text1">
+        <div>HI THERE</div>
+        <h2 style="font-size: 35px;">I’m Jason Stroff
+        </br>UX DESIGNER + DEVELOPER based in Florida.
+        </h2>
+        <ul class="ex">
+          <li>
+            <strong>6+</strong>
+            <span>Experience</span>
+          </li>
+          <li>
+            <strong>89</strong>
+            <span>Projects</span>
+          </li>
+          <li>
+            <strong>52</strong>
+            <span>Happy Client</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+
+  <div class="content">
+    <h4 class="heading">
+      ABOUT ME
+
+    </h4>
+    <div class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem </br>voluptate mollitia ut quos similique laborum. Vero magni quam qui </br>eum tempora. Ab adipisci eius quibusdam eveniet eaque harum </br>consectetur atque, veritatis necessitatibus quaerat quam quia alias </br>libero dolor ad fugit reprehenderit? Temporibus sit rem mollitia autem </br>maxime debitis sint vel.</div>  
+    <div class="buton">DOWNLOAD RESUME</div>  
+
+
+
+    <div class="skill">
+      <div class="row">
+        <H2 class="heading">CORE SKILL</H2>
+       </br><div class="buton1">JavaScript</div>
+        <div class="buton1">Node.js</div>
+        <div class="buton1">Express.js</div>
+      </br><div class="buton1">MongoDB</div>
+        <div class="buton1">Vue.js</div>
+        <div class="buton1">React</div>
+        <div class="buton1">Sequelize</div>
+      </br><div class="buton1">Github</div>
+        <div class="buton1">HTML</div>
+
+      </div>
+      <div class="row">
+        <H2 class="heading">OTHER SKILL</H2>
+      </br><div class="buton1">Storyblok</div>
+        <div class="buton1">PWAs</div>
+      </br><div class="buton1">Responsive Web Design</div>
+        <div class="buton1">React</div>
+      </br> <div class="buton1">Vuetify</div>
+      </div>
+    </div>
+
+
+    <h2 class="heading">WORK EXPRIENCE</h2>
+    <div class="exprience">
+      <div class="row">
+        <h5>2019 - Present</h5>
+        <div style="font-size: 25px;"> Matrix Media Inc</div>
+        <div style="font-size: 20px;">Full Stack developer</div>
+        <p style="width: 400px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum distinctio, facere pariatur voluptatum labore modi. </p>
+        <ul>
+          <li style="width: 340px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores?
+          </li>
+          <li style="width: 340px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores?
+          </li>
+          <li style="width: 340px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores?
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <h5>2018 - 2019</h5>
+        <div style="font-size: 25px;"> Lexind</div>
+        <div style="font-size: 20px;">Senior app developer</div>
+        <p style="width: 400px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum distinctio, facere pariatur voluptatum labore modi. </p>
+        <ul>
+          <li style="width: 340px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores?
+          </li>
+          <li style="width: 340px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores?
+          </li>
+          <li style="width: 340px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores?
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <h2 class="heading">LATEST WORKS</h2>
+    <div class="container2">
+      
+       <div class="row">
+        <div style="font-size: 22px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iusto sit aliquam neque rerum! Modi, a sapiente ea delectus nisi sequi voluptatum doloribus ullam facere debitis praesentium nobis, nesciunt repudiandae.</div>
+        <div class="buton" style="margin-left: 0px;">DETAILS</div>
+       </div> 
+       <div class="row">
+        <img src="./work-1.jpg" style="max-width:60%; max-height: 60%px;  margin-left: 60px;" alt="ANH MINH HOA">
+       </div>  
+      </div>
+    </div>
+    
+    
+    
+    </div>
+    
+</div>
+
+
+
+
+
+
+    
+    
+</body>
+</html>

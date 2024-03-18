@@ -8,13 +8,16 @@
 <body>
     <h3>Login</h3>
     <div>Email
-        <input type="text">
+        <input id="log-email" type="text">
     </div>
     <div class="pass"> Pass work
-        <input type="text">
+        <input id="log-pass" type="text">
     </div>
-    <div class="login">
+    <div class="login" onclick="Login()">
         <button>LOGIN</button>
     </div>
+    <div style="color: red; display: none;" id="err-log-email" > Email khong ton tai</div>
+    <div style="color: red; display: none;" id="err-log-pass" > Mat khau sai! Hay nhap lai</div>
+    <script src="./main.js"></script>
 </body>
 </html>
